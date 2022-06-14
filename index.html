@@ -4,10 +4,19 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- UNICONS -->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- SWIPER CSS -->
+        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+ 
+
   <title>Kolbes Portfolio</title>
-  <meta name="description" content="My portfolio:)">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="My portfolio">
+ 
 </head>
 <body>
     <!-- HEADER -->
@@ -121,7 +130,7 @@
             <h2 class="section__title">About Me</h2>
             <span class="section__subtitle">My introduction</span>
 
-            <div class="about_-container container grid">
+            <div class="about__container container grid">
                 <img src="/assets/img/about.png" alt="" class="about__img">
 
                 <div class="about__data">
@@ -330,14 +339,218 @@
         </section>
 
         <!--  SERVICES -->
+        <section class="services section" id="services">
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle">What I offer</span>
 
+            <div class="services__container container grid">
+                <!-- SERVICES 1 -->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-arrow services__icon"></i>
+                        <h3 class="services__title">Frontend <br> Developer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Frontend <br> Developer</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                        <ul class="services__modal-services grid">
+                            <li class="services__modal-service">
+                                <i class="uil uil-check-circle services__modal-icon"></i>
+                                <p>I develop the user inferace.</p>
+                            </li>
+                            <li class="services__modal-service">
+                                <i class="uil uil-check-circle services__modal-icon"></i>
+                                <p>Web page development.</p>
+                            </li>
+                            <li class="services__modal-service">
+                                <i class="uil uil-check-circle services__modal-icon"></i>
+                                <p>I develop the user interface.</p>
+                            </li>
+                            <li class="services__modal-service">
+                                <i class="uil uil-check-circle services__modal-icon"></i>
+                                <p>I position your company brand.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </section>
 
         <!-- PORTFOLIO -->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most recent work</span>
+
+            <div class="portfolio__container container swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Portfolio 1 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="../assets/img/portfolio.jpeg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">News App</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interactions.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Portfolio 2 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="../assets/img/portfolio2.jpeg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Golf Score App</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interactions.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Portfolio 3 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="../assets/img/portfolio3.jpeg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Online Store</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interactions.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- PROJECT IN MIND -->
+        <section class="project section">
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title">You have a new project</h2>
+                        <p class="project__description">Contact me now</p>
+                        <a href="#contact" class="button button--flex button--white">
+                            Contact
+                            <i class="uil uil-message project__icon button__icon"></i>
+                        </a>
+                    </div>
+
+                    <img src="/assets/img/project.jpg" alt="" class="project__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIAL -->
+        <!-- <section class="testimonial section">
+            <h2 class="section__title">Testimonial</h2>
+            <span class="section__subtitle">My client saying</span>
+
+            <div class="testimonial__container container">
+                <div>
+                     <!- TESTIMONIAL 1 -->
+                    <!-- <div class="testimonial__content">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="" alt="" class="testimonial__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> --> 
 
 
-        <!-- CONTACT -->
+        <!-- CONTACT ME-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+
+                        <div><h3 class="contact__title">Call Me</h3>
+                        <span class="contact__subtitle">801-602-3394</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                        <div><h3 class="contact__title">Email</h3>
+                        <span class="contact__subtitle">kolbejz0021@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                        <div><h3 class="contact__title">Location</h3>
+                        <span class="contact__subtitle">Saratoga Springs, Utah</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="email" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Project</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+
+                        <div>
+                            <a href="#" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 
-  <script src="js/main.js "></script>
+    <!-- SWIPER JS -->
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <!-- MAIN JS -->
+    <script src="js/main.js "></script>
 </body>
 </html>
