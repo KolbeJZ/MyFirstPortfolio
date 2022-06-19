@@ -27,7 +27,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link active-link">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
@@ -61,6 +61,9 @@
             </div>
 
             <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -154,7 +157,7 @@
                     </div>
 
                     <div class="about__buttons">
-                        <a download="" href="/assets/pdf/Kolbe Zimmerman-Resume (4).pdf" class="button button--flex">
+                        <a download="" href="/assets/resume - kolbe zimmerman - 2022-05-20.pdf" class="button button--flex">
                             Download CV<i class="uil uil-file-download button__icon"></i>
 
                         </a>
@@ -548,9 +551,53 @@
         </section>
     </main>
 
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Kolbe</h1>
+                    <span class="footer__subtitle">Frontend Developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contactme</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/kolbe.zimmerman/" target="_blank" class="footer__social">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/kolbezimmerman/?hl=en" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+
+                    <a href="https://twitter.com/KolbeZimmerman" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">Kolbe Zimmerman</p>
+        </div>
+    </footer>
+
+    <!-- SCROLL TOP -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
     <!-- SWIPER JS -->
     <script src="/assets/js/swiper-bundle.min.js"></script>
     <!-- MAIN JS -->
-    <script src="js/main.js "></script>
+    <script src="/assets/js/main.js "></script>
 </body>
 </html>
