@@ -113,7 +113,7 @@ html {
 }
 
 body{
-    margin: 00 var(--header-height) 0;
+    margin: 0 var(--header-height) 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
@@ -445,6 +445,7 @@ img {
 /* SKILLS */
 .skills__container {
     row-gap: 0;
+    display: block;
 }
 
 .skills__header {
@@ -466,6 +467,7 @@ img {
 
 .skills__title {
     font-size: var(--h3-font-size);
+    padding-top: 25px;
 }
 
 .skills__subtitle {
@@ -473,10 +475,10 @@ img {
     color: var(--text-color-light);
 }
 
-.skills__arrow {
+/* .skills__arrow {
     margin-left: auto;
     transition: 4s;
-}
+} */
 
 .skills__list {
     row-gap: 1.5rem;
@@ -538,7 +540,7 @@ img {
     width: 30%;
 }
 
-.skills__close .skills__list {
+/* .skills__close .skills__list {
     height: 0;
     overflow: hidden;
 }
@@ -550,7 +552,7 @@ img {
 
 .skills__open .skills__arrow {
     transform: rotate(-180deg);
-}
+} */
 
 /* QUALIFICATION */
 .qualification__tabs {
@@ -612,13 +614,13 @@ img {
     transform: translate(6px, -7px);
 }
 
-.qualification [data-content] {
+/* .qualification [data-content] {
     display: none;
 }
 
 .qualification__active[data-content] {
     display: block;
-}
+} */
 
 /* SERVICES */
 .services__container {
@@ -809,6 +811,51 @@ img {
 }
 
 /* CONTACT ME */
+.contact__container {
+    width: 100%;
+    height: 100vh;
+    /* background: var(--first-color); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact__form{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.contact__container h3 {
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.contact__container input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+
+.contact__button{
+    padding: 15px;
+    background: var(--first-color-second);
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+} 
 .contact__container{
     row-gap: 3rem;
 }
