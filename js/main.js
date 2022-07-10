@@ -30,43 +30,43 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 // ACCORDION SKILLS
-const skillsContent = document.getElementsByClassName('skills__content'),
-    skillsHeader = document.querySelectorAll('.skills__header')
+// const skillsContent = document.getElementsByClassName('skills__content'),
+//     skillsHeader = document.querySelectorAll('.skills__header')
 
-function toggleSkills(){
-    let itemClass = this.parentNode.className
+// function toggleSkills(){
+//     let itemClass = this.parentNode.className
 
-    for(i = 0; i < skillsContent.length; i++) {
-        skillsContent[i].className = 'skills__content skills__close'
-    }
-    if(itemClass === 'skills__content skills__close') {
-        this.parentNode.className = 'skills__content skills__open'
-    }
-}
+//     for(i = 0; i < skillsContent.length; i++) {
+//         skillsContent[i].className = 'skills__content skills__close'
+//     }
+//     if(itemClass === 'skills__content skills__close') {
+//         this.parentNode.className = 'skills__content skills__open'
+//     }
+// }
 
-skillsHeader.forEach((el) =>{
-    el.addEventListener('click', toggleSkills)
-})
+// skillsHeader.forEach((el) =>{
+//     el.addEventListener('click', toggleSkills)
+// })
 
 // QUALIFICATION TABS
-const tabs = document.querySelectorAll('[data-target'),
-    tabContents = document.querySelectorAll('[data-content]')
+// const tabs = document.querySelectorAll('[data-target'),
+//     tabContents = document.querySelectorAll('[data-content]')
 
-    tabs.forEach(tab =>{
-        tab.addEventListener('click', () => {
-            const target = document.querySelector(tab.dataset.target)
+//     tabs.forEach(tab =>{
+//         tab.addEventListener('click', () => {
+//             const target = document.querySelector(tab.dataset.target)
 
-            tabContents.forEach(tabContent => {
-                tabContent.classList.remove('qualification__active')
-            })
-            target.classList.add('qualification__active')
+//             tabContents.forEach(tabContent => {
+//                 tabContent.classList.remove('qualification__active')
+//             })
+//             target.classList.add('qualification__active')
 
-            tab.forEach(tab =>{
-                tab.classList.remove('qualification__active')
-            })
-            tab.classList.add('qualification__active')
-        })
-    })
+//             tab.forEach(tab =>{
+//                 tab.classList.remove('qualification__active')
+//             })
+//             tab.classList.add('qualification__active')
+//         })
+//     })
 
 // SERVICES MODAL
 const modalViews = document.querySelectorAll('.services__modal'),
@@ -124,7 +124,25 @@ function scrollActive(){
         }
     })
 }
-window.addEventListener('scroll', scrollActive)
+window.addEventListener('scroll', scrollActive);
+// CONTACT
+function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "kolbejz0021@gmail.com",
+        Password : "KJZ06242002",
+        To : 'kolbejz0021@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Contact Form Enquiry",
+        Body : "Name: " + document.getElementById("name").value
+        + "<br> Email: " + document.getElementById("email").value
+        + "<br> Phone Number: " + document.getElementById("phone").value
+        + "<br> Message: " + document.getElementById("message").value
+    }).then(
+      message => alert("Message Sent Successfully")
+    );
+}
+// 4138BA3454FD91C56A5823B3977BFD7DB29A
 
 // CHANGE BACKGROUND HEADER
 function scrollHeader(){
