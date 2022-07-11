@@ -824,7 +824,7 @@ img {
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
-    width: 90%;
+    width: 80%;
     max-width: 600px;
     border-radius: 10px;
 }
@@ -1016,6 +1016,20 @@ img {
     }
     .nav__list{
         column-gap: 0;
+    }
+    .contact__container {
+        width: 200px;
+    }
+    .contact__form{
+        width: auto;
+    }
+    .contact__title {
+        font-size: 25px;
+        display: inline-block;
+    }
+    .contact__information {
+        font-size: 20px;
+        
     }
 
     .home__content{
