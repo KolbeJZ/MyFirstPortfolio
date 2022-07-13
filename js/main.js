@@ -128,9 +128,10 @@ window.addEventListener('scroll', scrollActive);
 // CONTACT
 function sendEmail(){
     Email.send({
-        Host : "smtp.gmail.com",
+        // SecureToken : "6861b6f9-0886-4e93-8251-7a52999ef011",
+        Host : "smtp.elasticemail.com",
         Username : "kolbejz0021@gmail.com",
-        Password : "KJZ06242002",
+        Password : "4138BA3454FD91C56A5823B3977BFD7DB29A",
         To : 'kolbejz0021@gmail.com',
         From : document.getElementById("email").value,
         Subject : "New Contact Form Enquiry",
