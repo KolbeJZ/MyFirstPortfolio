@@ -131,7 +131,7 @@ function sendEmail(){
         // SecureToken : "6861b6f9-0886-4e93-8251-7a52999ef011",
         Host : "smtp.elasticemail.com",
         Username : "kolbejz0021@gmail.com",
-        Password : "4138BA3454FD91C56A5823B3977BFD7DB29A",
+        Password : "C0C4DF3A0D34E778410A570551AD39BC4C30",
         To : 'kolbejz0021@gmail.com',
         From : document.getElementById("email").value,
         Subject : "New Contact Form Enquiry",
@@ -143,6 +143,7 @@ function sendEmail(){
       message => alert("Message Sent Successfully")
     );
 }
+// C0C4DF3A0D34E778410A570551AD39BC4C30
 // 4138BA3454FD91C56A5823B3977BFD7DB29A
 
 // CHANGE BACKGROUND HEADER
