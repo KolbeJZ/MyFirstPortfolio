@@ -129,7 +129,7 @@ window.addEventListener('scroll', scrollActive);
 function sendEmail(){
     Email.send({
         // SecureToken : "6861b6f9-0886-4e93-8251-7a52999ef011",
-        Host : "smtp.elasticemail.com",
+        Host : "smtp.gmail.com",
         Username : "kolbejz0021@gmail.com",
         Password : "C0C4DF3A0D34E778410A570551AD39BC4C30",
         To : 'kolbejz0021@gmail.com',
