@@ -126,12 +126,18 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive);
 // CONTACT
+
+// const form = document.querySelector('contact__form');
+// form.addEventListener("submit", e => {
+//     e.preventDefault();
+//     let name = document.querySelector(".name").value
+// })
 function sendEmail(){
     Email.send({
         // SecureToken : "6861b6f9-0886-4e93-8251-7a52999ef011",
-        Host : "smtp.gmail.com",
-        Username : "kolbejz0021@gmail.com",
-        Password : "C0C4DF3A0D34E778410A570551AD39BC4C30",
+        Host : "smtp.elasticemail.com",
+        Username : "kolbezimmerman4@gmail.com",
+        Password : "B085E5E40DA00876EBA547555227502D8BBF",
         To : 'kolbejz0021@gmail.com',
         From : document.getElementById("email").value,
         Subject : "New Contact Form Enquiry",
