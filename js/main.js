@@ -137,7 +137,7 @@ function sendEmail(){
         // SecureToken : "6861b6f9-0886-4e93-8251-7a52999ef011",
         Host : "smtp.elasticemail.com",
         Username : "kolbezimmerman4@gmail.com",
-        Password : "B085E5E40DA00876EBA547555227502D8BBF",
+        Password : "E080BE7FDE20E15B0481A8411088838E5C13",
         To : 'kolbejz0021@gmail.com',
         From : document.getElementById("email").value,
         Subject : "New Contact Form Enquiry",
