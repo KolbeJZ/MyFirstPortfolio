@@ -127,31 +127,6 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive);
 // CONTACT
 
-// const form = document.querySelector('contact__form');
-// form.addEventListener("submit", e => {
-//     e.preventDefault();
-//     let name = document.querySelector(".name").value
-// })
-function sendEmail(){
-    Email.send({
-        // SecureToken : "6861b6f9-0886-4e93-8251-7a52999ef011",
-        Host : "smtp.elasticemail.com",
-        Username : "kolbezimmerman4@gmail.com",
-        Password : "E080BE7FDE20E15B0481A8411088838E5C13",
-        To : 'kolbejz0021@gmail.com',
-        From : document.getElementById("email").value,
-        Subject : "New Contact Form Enquiry",
-        Body : "Name: " + document.getElementById("name").value
-        + "<br> Email: " + document.getElementById("email").value
-        + "<br> Phone Number: " + document.getElementById("phone").value
-        + "<br> Message: " + document.getElementById("message").value
-    }).then(
-      message => alert("Message Sent Successfully")
-    );
-}
-// C0C4DF3A0D34E778410A570551AD39BC4C30
-// 4138BA3454FD91C56A5823B3977BFD7DB29A
-
 // CHANGE BACKGROUND HEADER
 function scrollHeader(){
     const nav = document.getElementById('header')
